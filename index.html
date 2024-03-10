@@ -8,13 +8,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="shortcut icon" href="assets/teaicon.png" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link
         href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -33,23 +36,56 @@
 
         <header>
             <nav class="header-content container">
-                <div class="header-logo" >
-                    <img src="assets/quali.png" alt="Tea shop logo">
+                <div class="header-logo">
+                    <a href="index.html"><img src="assets/quali.png" alt="Tea shop logo"></a>
+                    
                 </div>
-                <div class="search-bar" >
-                    <form id="search-form">
-                        <input type="text" name="search-keywords" id="search">
-                        <button type="submit">Search</button>
+
+                <div class="search">
+                    <form action="https://www.google.com/search" method="get" target="blank" class="search-bar">
+                        <input type="text" placeholder="Looking for tea?" name="q">
+                        <button type="submit"> <i class='bx bx-search'></i></button>
                     </form>
+
                 </div>
 
 
-                <div class="header-menu" >
-                    <a href="menu">Menu</a>
-                    <a href="products">Products</a>
-                    <a href="news">News</a>
-                    <a href="about">About</a>
-                    <a href="contact">Contact</a>
+
+                <div class="header-menu">
+                    <ul>
+
+                        <li>
+                            <a href="#">Menu</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Teas </a></li>
+                                <li><a href="#">Best Sellers</a></li>
+                                <li><a href="#">Tea Bags</a></li>
+
+                            </ul>
+
+
+                        <li><a href="#">Products</a>
+                            <ul class="dropdown-products">
+                                <li><a href="#">Stress Relief </a></li>
+                                <li><a href="#">Sleep</a></li>
+                                <li><a href="#">Immunity</a></li>
+                                <li><a href="#">Relaxing</a></li>
+                                <li><a href="#">Gift</a></li>
+                            </ul>
+                        </li>
+                        </li>
+
+                        <a href="#" target="_self">News</a>
+                        <a href="#" target="_self">About</a>
+                        <a href="#" target="_self">Contact</a>
+
+
+
+                </div>
+                <div class="menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
 
                 </div>
 
@@ -97,7 +133,7 @@
         </div>
 
         <section class="options">
-            <div class="teas"data-aos="fade-up" data-aos-delay="150">
+            <div class="teas" data-aos="fade-up" data-aos-delay="150">
                 <img src="assets/stress.jpg" alt="stress relief" />
                 <div class="teas-info">
                     <strong>Stress Relief</strong>
@@ -117,7 +153,7 @@
 
                 </div>
             </div>
-            <div class="teas" data-aos="fade-up"data-aos-delay="350">
+            <div class="teas" data-aos="fade-up" data-aos-delay="350">
                 <img src="assets/immunity.jpg" alt="immunity">
                 <div class="teas-info">
                     <strong>Immunity</strong>
@@ -145,15 +181,15 @@
 
     <footer class="footer">
         <div class="footer-menu">
-        
-                <a href="menu">Home</a>
-                <a href="about">About</a>
-                <a href="contact">Contact</a>
 
-            </div>
+            <a href="menu">Home</a>
+            <a href="about">About</a>
+            <a href="contact">Contact</a>
+
+        </div>
 
         <div>
-            <img src="assets/teaicon.png" alt="tea">
+            <a href="index.html"><img src="assets/quali.png" alt="Tea shop logo"></a>
         </div>
 
         <p>Copyright 2024 | Tea Shop</p>
@@ -164,4 +200,4 @@
     <script src="script.js"></script>
 </body>
 
-</html> 
+</html>

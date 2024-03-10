@@ -1,0 +1,238 @@
+.container {
+    max-width: 2560px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+// BG- HOME
+
+.bg-home {
+    position: relative;
+}
+
+.bg-home:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), $secondary-dark), url("../assets/pexels-mareefe-1638280.jpg");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    opacity: 0.3;
+
+}
+
+//--- HERO ----------------------------
+
+.hero {
+    color: $white-normal;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+
+    h1{
+        text-align: center;
+        line-height: 150%;
+        max-width: 940px;
+        font-size: 48px;
+    }
+}
+.button-contact{
+   padding: 14px 28px;
+   color: $white-normal;
+   background-color: $orange-normal;
+   border: 0;
+   font-size: 18px;
+   font-weight: 600;
+   margin: 14px 0;
+
+}
+.button-contact:hover{
+    animation: scaleButton 0.8s forwards;
+}
+@keyframes scaleButton{
+    from{
+transform: scale(1);
+    }
+to{
+transform: scale(1.07);
+}
+}
+
+@media screen and (max-width:904px){
+    .hero{
+        min-height: 30vh;
+        h1{
+            font-size: 34px;
+            padding: 0 14px;
+            width: 100%;
+        }
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    .hero h1{
+        font-size: 24px;
+    }
+}
+
+// BENEFITS 
+
+.benefits{
+    background-color: $secondary-dark;
+    overflow: hidden;
+    color: $white-normal;
+    
+}
+.benefits-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 34px 14px 64px 14px;
+
+    img{
+        width: 500px;
+        max-width: 100%;
+        
+        cursor: default;
+    }
+    
+}
+.benefits-content div{
+    flex:1;
+}
+
+.benefits-description{
+    h2{
+    font-size:  38px;
+    margin-bottom: 24px;    
+    }
+    p{
+        max-width: 780px;
+        margin-bottom: 14px;
+        line-height: 150%;
+        text-align: justify;
+        
+    }
+}
+@media screen and (max-width: 904px){
+    .benefits-content{
+        flex-direction: column;
+
+    }
+    
+}
+
+
+
+// PRODUCTS
+
+.products{
+    background-color: $secondary-light;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 14px;
+}
+
+
+.products-content h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 14px;
+}
+
+.products-content p{
+    line-height: 150%;
+    margin-bottom: 14px;
+    text-align: center;
+    max-width: 780px;
+
+}
+
+.options{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 0 44px 34px 44px;
+}
+.teas{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    background-color: $white-normal;
+    border-radius: 8px;
+    box-shadow: 0px -1px 17px -4px #000;
+    overflow: hidden;
+    
+    img{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        max-width: 500px;
+        transition: transform 0.2s;
+    }
+}
+
+.teas img:hover{
+    transform: scale(1.2);
+    z-index: 1;
+    cursor: default;
+}
+
+.teas-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding:14px;
+    background-color: $white-normal;
+    z-index: 99;
+}
+
+.teas-info button{
+    color: $white-normal;
+    background-color: $orange-normal;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 0;
+}
+
+@media screen and (max-width: 768px){
+    .options{
+        flex-direction: column;
+    }
+}
+
+
+// FOOTER
+
+.footer{
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 0;
+    gap: 24px;
+    color: $white-normal;
+    img{
+        width: 160px;
+    }
+}
+.footer-menu a{
+    color: $white-normal;
+    padding: 6px;
+}
